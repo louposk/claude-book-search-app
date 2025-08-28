@@ -1,0 +1,17 @@
+<div class="app-container">
+  <header class="app-header">
+    <h1>{{ title }}</h1>
+    <p>Search for books using Google Books API</p>
+  </header>
+
+  <main class="app-main">
+    <app-book-search (search)="onSearch($event)"></app-book-search>
+    <app-book-list 
+      [books]="books" 
+      [loading]="loading" 
+      [searchPerformed]="searchPerformed">
+    </app-book-list>
+  </main>
+</div>
+
+<router-outlet />

@@ -1,0 +1,66 @@
+<div class="book-list-container">
+  <!-- Loading State -->
+  <div *ngIf="loading" class="loading-container">
+    <div class="loading-spinner"></div>
+    <p>Searching for books...</p>
+  </div>
+
+  <!-- No Results -->
+  <div *ngIf="searchPerformed && !loading && books.length === 0" class="no-results">
+    <p>No books found. Try a different search query.</p>
+  </div>
+
+  <!-- Book Results -->
+  <div *ngIf="!loading && books.length > 0" class="book-grid">
+    <div *ngFor="let book of books" class="book-card">
+      <div class="book-image">
+        <img 
+          [src]="book.imageLinks?.thumbnail || 'assets/no-image.png'" 
+          [alt]="book.title"
+          class="book-thumbnail"
+          (error)="$event.target.src='assets/no-image.png'">
+      </div>
+      
+      <div class="book-details">
+        <h3 class="book-title">{{ book.title }}</h3>
+        <p class="book-authors">{{ getAuthorsString(book.authors) }}</p>
+        
+        <div class="book-meta">
+          <p *ngIf="book.publishedDate" class="published-date">
+            <strong>Published:</strong> {{ book.publishedDate }}
+          </p>
+          <p *ngIf="book.publisher" class="publisher">
+            <strong>Publisher:</strong> {{ book.publisher }}
+          </p>
+          <p *ngIf="book.pageCount" class="page-count">
+            <strong>Pages:</strong> {{ book.pageCount }}
+          </p>
+          <p *ngIf="book.averageRating" class="rating">
+            <strong>Rating:</strong> {{ book.averageRating }}/5 
+            <span *ngIf="book.ratingsCount">({{ book.ratingsCount }} reviews)</span>
+          </p>
+        </div>
+
+        <p *ngIf="book.description" class="book-description">
+          {{ book.description | slice:0:200 }}
+          <span *ngIf="book.description.length > 200">...</span>
+        </p>
+
+        <div class="book-actions">
+          <button 
+            *ngIf="book.previewLink" 
+            (click)="openBookLink(book.previewLink)" 
+            class="btn btn-preview">
+            Preview
+          </button>
+          <button 
+            *ngIf="book.infoLink" 
+            (click)="openBookLink(book.infoLink)" 
+            class="btn btn-info">
+            More Info
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

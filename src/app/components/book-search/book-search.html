@@ -1,0 +1,30 @@
+<div class="search-container">
+  <div class="search-form">
+    <div class="search-type-selector">
+      <label for="searchType">Search by:</label>
+      <select 
+        id="searchType" 
+        [(ngModel)]="searchType" 
+        class="search-type-dropdown">
+        <option *ngFor="let type of searchTypes" [value]="type.value">
+          {{ type.label }}
+        </option>
+      </select>
+    </div>
+    
+    <div class="search-input-container">
+      <input 
+        type="text" 
+        [(ngModel)]="searchQuery" 
+        (keypress)="onKeyPress($event)"
+        placeholder="Enter your search query..." 
+        class="search-input">
+      <button 
+        (click)="onSearch()" 
+        [disabled]="!searchQuery.trim()" 
+        class="search-button">
+        Search
+      </button>
+    </div>
+  </div>
+</div>
