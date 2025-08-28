@@ -57,4 +57,10 @@ export class AppComponent {
       }
     });
   }
+
+  onClear() {
+    this.books = [];
+    this.loading = false;
+    this.searchPerformed = false;
+  }
 }
