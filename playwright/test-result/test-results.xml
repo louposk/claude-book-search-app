@@ -1,0 +1,820 @@
+<testsuites id="" name="" tests="85" failures="17" skipped="0" errors="0" time="126.028085">
+<testsuite name="delete-button-ui.spec.ts" timestamp="2025-10-20T23:02:26.402Z" hostname="chromium" tests="17" failures="2" skipped="0" time="25.635" errors="0">
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Default Button Appearance › should have correct default appearance when enabled" classname="delete-button-ui.spec.ts" time="1.824">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Hover State Visual Feedback › should provide proper visual feedback on hover" classname="delete-button-ui.spec.ts" time="2.143">
+<failure message="delete-button-ui.spec.ts:41:9 should provide proper visual feedback on hover" type="FAILURE">
+<![CDATA[  [chromium] › delete-button-ui.spec.ts:41:9 › Delete Button UI Interactions and Styling › UI Styling - Hover State Visual Feedback › should provide proper visual feedback on hover 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "ease"
+    Received string:    "0.3s"
+
+      65 |       // And the transition should be smooth (contains 'ease')
+      66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');
+    > 67 |       expect(transition).toContain('ease');
+         |                          ^
+      68 |
+      69 |       // When I move my mouse away from the button
+      70 |       await bookSearchPage.searchInput.hover();
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-chromium/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Disabled State Visual Indicators › should have correct visual indicators when disabled" classname="delete-button-ui.spec.ts" time="1.27">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Click Feedback and Active State › should provide appropriate click feedback with active state styling" classname="delete-button-ui.spec.ts" time="1.454">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Focus Indicators for Keyboard Users › should show proper focus indicators for keyboard navigation" classname="delete-button-ui.spec.ts" time="1.111">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Layout - Button Positioning Within Search Container › should be properly positioned within the search container" classname="delete-button-ui.spec.ts" time="1.175">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Layout - Responsive Behavior for Mobile › should adapt correctly to mobile responsive layout" classname="delete-button-ui.spec.ts" time="2.046">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Accessibility - Color Contrast Requirements › should meet accessibility color contrast requirements" classname="delete-button-ui.spec.ts" time="1.628">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Accessibility - Size Requirements › should meet minimum size requirements for accessibility" classname="delete-button-ui.spec.ts" time="1.217">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Animations - Transition Smoothness and Motion Preferences › should have smooth animations that are not disorienting" classname="delete-button-ui.spec.ts" time="1.354">
+<failure message="delete-button-ui.spec.ts:247:9 should have smooth animations that are not disorienting" type="FAILURE">
+<![CDATA[  [chromium] › delete-button-ui.spec.ts:247:9 › Delete Button UI Interactions and Styling › UI Animations - Transition Smoothness and Motion Preferences › should have smooth animations that are not disorienting 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "ease"
+    Received string:    "0.3s"
+
+      255 |       // Then all transitions should use "ease" timing function
+      256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');
+    > 257 |       expect(transition).toContain('ease');
+          |                          ^
+      258 |
+      259 |       // And transition should be defined
+      260 |       expect(transition).not.toBe('all 0s ease 0s');
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-chromium/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI States - Button State Consistency › should be visually consistent with search button" classname="delete-button-ui.spec.ts" time="1.138">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Feedback - Loading State Behavior › should provide immediate visual feedback during loading states" classname="delete-button-ui.spec.ts" time="1.384">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Errors - Error State Visual Handling › should maintain normal appearance during error states" classname="delete-button-ui.spec.ts" time="2.403">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Customization - Theme Compatibility › should work seamlessly with application theme" classname="delete-button-ui.spec.ts" time="1.599">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Usability - Visual Hierarchy › should have appropriate visual hierarchy in the interface" classname="delete-button-ui.spec.ts" time="1.153">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Button Feedback Timing › should provide feedback at appropriate timing" classname="delete-button-ui.spec.ts" time="1.324">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › High Contrast Mode and Forced Colors › should remain visible and functional in high contrast mode" classname="delete-button-ui.spec.ts" time="1.412">
+</testcase>
+</testsuite>
+<testsuite name="delete-button-ui.spec.ts" timestamp="2025-10-20T23:02:26.402Z" hostname="firefox" tests="17" failures="3" skipped="0" time="48.843" errors="0">
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Default Button Appearance › should have correct default appearance when enabled" classname="delete-button-ui.spec.ts" time="3.846">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Hover State Visual Feedback › should provide proper visual feedback on hover" classname="delete-button-ui.spec.ts" time="4.204">
+<failure message="delete-button-ui.spec.ts:41:9 should provide proper visual feedback on hover" type="FAILURE">
+<![CDATA[  [firefox] › delete-button-ui.spec.ts:41:9 › Delete Button UI Interactions and Styling › UI Styling - Hover State Visual Feedback › should provide proper visual feedback on hover 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "ease"
+    Received string:    "0.3s"
+
+      65 |       // And the transition should be smooth (contains 'ease')
+      66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');
+    > 67 |       expect(transition).toContain('ease');
+         |                          ^
+      68 |
+      69 |       // When I move my mouse away from the button
+      70 |       await bookSearchPage.searchInput.hover();
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-firefox/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Disabled State Visual Indicators › should have correct visual indicators when disabled" classname="delete-button-ui.spec.ts" time="1.761">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Click Feedback and Active State › should provide appropriate click feedback with active state styling" classname="delete-button-ui.spec.ts" time="1.566">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Focus Indicators for Keyboard Users › should show proper focus indicators for keyboard navigation" classname="delete-button-ui.spec.ts" time="8.786">
+<failure message="delete-button-ui.spec.ts:126:9 should show proper focus indicators for keyboard navigation" type="FAILURE">
+<![CDATA[  [firefox] › delete-button-ui.spec.ts:126:9 › Delete Button UI Interactions and Styling › UI Interactions - Focus Indicators for Keyboard Users › should show proper focus indicators for keyboard navigation 
+
+    Error: expect(locator).not.toBeFocused() failed
+
+    Locator:  locator('.delete-button')
+    Expected: not focused
+    Received: focused
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "not toBeFocused" with timeout 5000ms
+      - waiting for locator('.delete-button')
+        9 × locator resolved to <button type="button" class="delete-button" aria-label="Delete search" _ngcontent-ng-c3324351578=""> Delete </button>
+          - unexpected value "focused"
+
+
+      138 |
+      139 |       // Then the focus indicator should be removed
+    > 140 |       await expect(bookSearchPage.deleteButton).not.toBeFocused();
+          |                                                     ^
+      141 |     });
+      142 |   });
+      143 |
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:140:53
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-48e9c-ors-for-keyboard-navigation-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-48e9c-ors-for-keyboard-navigation-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-48e9c-ors-for-keyboard-navigation-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-48e9c-ors-for-keyboard-navigation-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-48e9c-ors-for-keyboard-navigation-firefox/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-48e9c-ors-for-keyboard-navigation-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Layout - Button Positioning Within Search Container › should be properly positioned within the search container" classname="delete-button-ui.spec.ts" time="1.523">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Layout - Responsive Behavior for Mobile › should adapt correctly to mobile responsive layout" classname="delete-button-ui.spec.ts" time="3.408">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Accessibility - Color Contrast Requirements › should meet accessibility color contrast requirements" classname="delete-button-ui.spec.ts" time="2.109">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Accessibility - Size Requirements › should meet minimum size requirements for accessibility" classname="delete-button-ui.spec.ts" time="1.402">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Animations - Transition Smoothness and Motion Preferences › should have smooth animations that are not disorienting" classname="delete-button-ui.spec.ts" time="1.543">
+<failure message="delete-button-ui.spec.ts:247:9 should have smooth animations that are not disorienting" type="FAILURE">
+<![CDATA[  [firefox] › delete-button-ui.spec.ts:247:9 › Delete Button UI Interactions and Styling › UI Animations - Transition Smoothness and Motion Preferences › should have smooth animations that are not disorienting 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "ease"
+    Received string:    "0.3s"
+
+      255 |       // Then all transitions should use "ease" timing function
+      256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');
+    > 257 |       expect(transition).toContain('ease');
+          |                          ^
+      258 |
+      259 |       // And transition should be defined
+      260 |       expect(transition).not.toBe('all 0s ease 0s');
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-firefox/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI States - Button State Consistency › should be visually consistent with search button" classname="delete-button-ui.spec.ts" time="4.135">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Feedback - Loading State Behavior › should provide immediate visual feedback during loading states" classname="delete-button-ui.spec.ts" time="4.32">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Errors - Error State Visual Handling › should maintain normal appearance during error states" classname="delete-button-ui.spec.ts" time="2.992">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Customization - Theme Compatibility › should work seamlessly with application theme" classname="delete-button-ui.spec.ts" time="2.071">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Usability - Visual Hierarchy › should have appropriate visual hierarchy in the interface" classname="delete-button-ui.spec.ts" time="1.579">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Button Feedback Timing › should provide feedback at appropriate timing" classname="delete-button-ui.spec.ts" time="1.615">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › High Contrast Mode and Forced Colors › should remain visible and functional in high contrast mode" classname="delete-button-ui.spec.ts" time="1.983">
+</testcase>
+</testsuite>
+<testsuite name="delete-button-ui.spec.ts" timestamp="2025-10-20T23:02:26.402Z" hostname="webkit" tests="17" failures="2" skipped="0" time="40.463" errors="0">
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Default Button Appearance › should have correct default appearance when enabled" classname="delete-button-ui.spec.ts" time="3.046">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Hover State Visual Feedback › should provide proper visual feedback on hover" classname="delete-button-ui.spec.ts" time="3.232">
+<failure message="delete-button-ui.spec.ts:41:9 should provide proper visual feedback on hover" type="FAILURE">
+<![CDATA[  [webkit] › delete-button-ui.spec.ts:41:9 › Delete Button UI Interactions and Styling › UI Styling - Hover State Visual Feedback › should provide proper visual feedback on hover 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "ease"
+    Received string:    "0.3s"
+
+      65 |       // And the transition should be smooth (contains 'ease')
+      66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');
+    > 67 |       expect(transition).toContain('ease');
+         |                          ^
+      68 |
+      69 |       // When I move my mouse away from the button
+      70 |       await bookSearchPage.searchInput.hover();
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-webkit/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Disabled State Visual Indicators › should have correct visual indicators when disabled" classname="delete-button-ui.spec.ts" time="1.841">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Click Feedback and Active State › should provide appropriate click feedback with active state styling" classname="delete-button-ui.spec.ts" time="2.684">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Focus Indicators for Keyboard Users › should show proper focus indicators for keyboard navigation" classname="delete-button-ui.spec.ts" time="1.769">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Layout - Button Positioning Within Search Container › should be properly positioned within the search container" classname="delete-button-ui.spec.ts" time="2.113">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Layout - Responsive Behavior for Mobile › should adapt correctly to mobile responsive layout" classname="delete-button-ui.spec.ts" time="2.839">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Accessibility - Color Contrast Requirements › should meet accessibility color contrast requirements" classname="delete-button-ui.spec.ts" time="2.439">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Accessibility - Size Requirements › should meet minimum size requirements for accessibility" classname="delete-button-ui.spec.ts" time="1.901">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Animations - Transition Smoothness and Motion Preferences › should have smooth animations that are not disorienting" classname="delete-button-ui.spec.ts" time="2.113">
+<failure message="delete-button-ui.spec.ts:247:9 should have smooth animations that are not disorienting" type="FAILURE">
+<![CDATA[  [webkit] › delete-button-ui.spec.ts:247:9 › Delete Button UI Interactions and Styling › UI Animations - Transition Smoothness and Motion Preferences › should have smooth animations that are not disorienting 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "ease"
+    Received string:    "0.3s"
+
+      255 |       // Then all transitions should use "ease" timing function
+      256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');
+    > 257 |       expect(transition).toContain('ease');
+          |                          ^
+      258 |
+      259 |       // And transition should be defined
+      260 |       expect(transition).not.toBe('all 0s ease 0s');
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-webkit/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI States - Button State Consistency › should be visually consistent with search button" classname="delete-button-ui.spec.ts" time="1.929">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Feedback - Loading State Behavior › should provide immediate visual feedback during loading states" classname="delete-button-ui.spec.ts" time="2.903">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Errors - Error State Visual Handling › should maintain normal appearance during error states" classname="delete-button-ui.spec.ts" time="3.188">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Customization - Theme Compatibility › should work seamlessly with application theme" classname="delete-button-ui.spec.ts" time="2.521">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Usability - Visual Hierarchy › should have appropriate visual hierarchy in the interface" classname="delete-button-ui.spec.ts" time="2.124">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Button Feedback Timing › should provide feedback at appropriate timing" classname="delete-button-ui.spec.ts" time="1.971">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › High Contrast Mode and Forced Colors › should remain visible and functional in high contrast mode" classname="delete-button-ui.spec.ts" time="1.85">
+</testcase>
+</testsuite>
+<testsuite name="delete-button-ui.spec.ts" timestamp="2025-10-20T23:02:26.402Z" hostname="Mobile Chrome" tests="17" failures="5" skipped="0" time="28.153" errors="0">
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Default Button Appearance › should have correct default appearance when enabled" classname="delete-button-ui.spec.ts" time="2.04">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Hover State Visual Feedback › should provide proper visual feedback on hover" classname="delete-button-ui.spec.ts" time="2.393">
+<failure message="delete-button-ui.spec.ts:41:9 should provide proper visual feedback on hover" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › delete-button-ui.spec.ts:41:9 › Delete Button UI Interactions and Styling › UI Styling - Hover State Visual Feedback › should provide proper visual feedback on hover 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "ease"
+    Received string:    "0.3s"
+
+      65 |       // And the transition should be smooth (contains 'ease')
+      66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');
+    > 67 |       expect(transition).toContain('ease');
+         |                          ^
+      68 |
+      69 |       // When I move my mouse away from the button
+      70 |       await bookSearchPage.searchInput.hover();
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Disabled State Visual Indicators › should have correct visual indicators when disabled" classname="delete-button-ui.spec.ts" time="1.396">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Click Feedback and Active State › should provide appropriate click feedback with active state styling" classname="delete-button-ui.spec.ts" time="1.461">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Focus Indicators for Keyboard Users › should show proper focus indicators for keyboard navigation" classname="delete-button-ui.spec.ts" time="1.147">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Layout - Button Positioning Within Search Container › should be properly positioned within the search container" classname="delete-button-ui.spec.ts" time="1.267">
+<failure message="delete-button-ui.spec.ts:145:9 should be properly positioned within the search container" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › delete-button-ui.spec.ts:145:9 › Delete Button UI Interactions and Styling › UI Layout - Button Positioning Within Search Container › should be properly positioned within the search container 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 355
+    Received:   38
+
+      153 |       if (deleteButtonBox && searchButtonBox) {
+      154 |         // Then the delete button should be positioned to the right of the search button
+    > 155 |         expect(deleteButtonBox.x).toBeGreaterThan(searchButtonBox.x + searchButtonBox.width);
+          |                                   ^
+      156 |
+      157 |         // And there should be consistent gap between search and delete buttons (10px from CSS)
+      158 |         const gap = deleteButtonBox.x - (searchButtonBox.x + searchButtonBox.width);
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:155:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Layout - Responsive Behavior for Mobile › should adapt correctly to mobile responsive layout" classname="delete-button-ui.spec.ts" time="1.975">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Accessibility - Color Contrast Requirements › should meet accessibility color contrast requirements" classname="delete-button-ui.spec.ts" time="2.008">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Accessibility - Size Requirements › should meet minimum size requirements for accessibility" classname="delete-button-ui.spec.ts" time="1.47">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Animations - Transition Smoothness and Motion Preferences › should have smooth animations that are not disorienting" classname="delete-button-ui.spec.ts" time="1.334">
+<failure message="delete-button-ui.spec.ts:247:9 should have smooth animations that are not disorienting" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › delete-button-ui.spec.ts:247:9 › Delete Button UI Interactions and Styling › UI Animations - Transition Smoothness and Motion Preferences › should have smooth animations that are not disorienting 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "ease"
+    Received string:    "0.3s"
+
+      255 |       // Then all transitions should use "ease" timing function
+      256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');
+    > 257 |       expect(transition).toContain('ease');
+          |                          ^
+      258 |
+      259 |       // And transition should be defined
+      260 |       expect(transition).not.toBe('all 0s ease 0s');
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI States - Button State Consistency › should be visually consistent with search button" classname="delete-button-ui.spec.ts" time="1.191">
+<failure message="delete-button-ui.spec.ts:275:9 should be visually consistent with search button" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › delete-button-ui.spec.ts:275:9 › Delete Button UI Interactions and Styling › UI States - Button State Consistency › should be visually consistent with search button 
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 3
+    Received:   4
+
+      283 |       if (deleteButtonBox && searchButtonBox) {
+      284 |         // Then both buttons should have the same height
+    > 285 |         expect(Math.abs(deleteButtonBox.height - searchButtonBox.height)).toBeLessThan(3);
+          |                                                                           ^
+      286 |       }
+      287 |
+      288 |       // And both buttons should have the same font size
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:285:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Feedback - Loading State Behavior › should provide immediate visual feedback during loading states" classname="delete-button-ui.spec.ts" time="1.569">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Errors - Error State Visual Handling › should maintain normal appearance during error states" classname="delete-button-ui.spec.ts" time="2.776">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Customization - Theme Compatibility › should work seamlessly with application theme" classname="delete-button-ui.spec.ts" time="1.72">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Usability - Visual Hierarchy › should have appropriate visual hierarchy in the interface" classname="delete-button-ui.spec.ts" time="1.306">
+<failure message="delete-button-ui.spec.ts:374:9 should have appropriate visual hierarchy in the interface" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › delete-button-ui.spec.ts:374:9 › Delete Button UI Interactions and Styling › UI Usability - Visual Hierarchy › should have appropriate visual hierarchy in the interface 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 38
+    Received:   38
+
+      382 |       if (deleteButtonBox && searchButtonBox) {
+      383 |         // Delete button should be positioned after search button (secondary action)
+    > 384 |         expect(deleteButtonBox.x).toBeGreaterThan(searchButtonBox.x);
+          |                                   ^
+      385 |       }
+      386 |
+      387 |       // And the button should be easily discoverable when needed
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:384:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Button Feedback Timing › should provide feedback at appropriate timing" classname="delete-button-ui.spec.ts" time="1.391">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › High Contrast Mode and Forced Colors › should remain visible and functional in high contrast mode" classname="delete-button-ui.spec.ts" time="1.709">
+</testcase>
+</testsuite>
+<testsuite name="delete-button-ui.spec.ts" timestamp="2025-10-20T23:02:26.402Z" hostname="Mobile Safari" tests="17" failures="5" skipped="0" time="42.924" errors="0">
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Default Button Appearance › should have correct default appearance when enabled" classname="delete-button-ui.spec.ts" time="3.149">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Hover State Visual Feedback › should provide proper visual feedback on hover" classname="delete-button-ui.spec.ts" time="3.808">
+<failure message="delete-button-ui.spec.ts:41:9 should provide proper visual feedback on hover" type="FAILURE">
+<![CDATA[  [Mobile Safari] › delete-button-ui.spec.ts:41:9 › Delete Button UI Interactions and Styling › UI Styling - Hover State Visual Feedback › should provide proper visual feedback on hover 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "ease"
+    Received string:    "0.3s"
+
+      65 |       // And the transition should be smooth (contains 'ease')
+      66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');
+    > 67 |       expect(transition).toContain('ease');
+         |                          ^
+      68 |
+      69 |       // When I move my mouse away from the button
+      70 |       await bookSearchPage.searchInput.hover();
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Styling - Disabled State Visual Indicators › should have correct visual indicators when disabled" classname="delete-button-ui.spec.ts" time="2.343">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Click Feedback and Active State › should provide appropriate click feedback with active state styling" classname="delete-button-ui.spec.ts" time="2.408">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Focus Indicators for Keyboard Users › should show proper focus indicators for keyboard navigation" classname="delete-button-ui.spec.ts" time="1.739">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Layout - Button Positioning Within Search Container › should be properly positioned within the search container" classname="delete-button-ui.spec.ts" time="2.631">
+<failure message="delete-button-ui.spec.ts:145:9 should be properly positioned within the search container" type="FAILURE">
+<![CDATA[  [Mobile Safari] › delete-button-ui.spec.ts:145:9 › Delete Button UI Interactions and Styling › UI Layout - Button Positioning Within Search Container › should be properly positioned within the search container 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 352
+    Received:   38
+
+      153 |       if (deleteButtonBox && searchButtonBox) {
+      154 |         // Then the delete button should be positioned to the right of the search button
+    > 155 |         expect(deleteButtonBox.x).toBeGreaterThan(searchButtonBox.x + searchButtonBox.width);
+          |                                   ^
+      156 |
+      157 |         // And there should be consistent gap between search and delete buttons (10px from CSS)
+      158 |         const gap = deleteButtonBox.x - (searchButtonBox.x + searchButtonBox.width);
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:155:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Layout - Responsive Behavior for Mobile › should adapt correctly to mobile responsive layout" classname="delete-button-ui.spec.ts" time="2.592">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Accessibility - Color Contrast Requirements › should meet accessibility color contrast requirements" classname="delete-button-ui.spec.ts" time="2.209">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Accessibility - Size Requirements › should meet minimum size requirements for accessibility" classname="delete-button-ui.spec.ts" time="2.286">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Animations - Transition Smoothness and Motion Preferences › should have smooth animations that are not disorienting" classname="delete-button-ui.spec.ts" time="2.16">
+<failure message="delete-button-ui.spec.ts:247:9 should have smooth animations that are not disorienting" type="FAILURE">
+<![CDATA[  [Mobile Safari] › delete-button-ui.spec.ts:247:9 › Delete Button UI Interactions and Styling › UI Animations - Transition Smoothness and Motion Preferences › should have smooth animations that are not disorienting 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "ease"
+    Received string:    "0.3s"
+
+      255 |       // Then all transitions should use "ease" timing function
+      256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');
+    > 257 |       expect(transition).toContain('ease');
+          |                          ^
+      258 |
+      259 |       // And transition should be defined
+      260 |       expect(transition).not.toBe('all 0s ease 0s');
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI States - Button State Consistency › should be visually consistent with search button" classname="delete-button-ui.spec.ts" time="1.718">
+<failure message="delete-button-ui.spec.ts:275:9 should be visually consistent with search button" type="FAILURE">
+<![CDATA[  [Mobile Safari] › delete-button-ui.spec.ts:275:9 › Delete Button UI Interactions and Styling › UI States - Button State Consistency › should be visually consistent with search button 
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 3
+    Received:   4
+
+      283 |       if (deleteButtonBox && searchButtonBox) {
+      284 |         // Then both buttons should have the same height
+    > 285 |         expect(Math.abs(deleteButtonBox.height - searchButtonBox.height)).toBeLessThan(3);
+          |                                                                           ^
+      286 |       }
+      287 |
+      288 |       // And both buttons should have the same font size
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:285:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Feedback - Loading State Behavior › should provide immediate visual feedback during loading states" classname="delete-button-ui.spec.ts" time="2.589">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Errors - Error State Visual Handling › should maintain normal appearance during error states" classname="delete-button-ui.spec.ts" time="4.092">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Customization - Theme Compatibility › should work seamlessly with application theme" classname="delete-button-ui.spec.ts" time="2.377">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Usability - Visual Hierarchy › should have appropriate visual hierarchy in the interface" classname="delete-button-ui.spec.ts" time="2.393">
+<failure message="delete-button-ui.spec.ts:374:9 should have appropriate visual hierarchy in the interface" type="FAILURE">
+<![CDATA[  [Mobile Safari] › delete-button-ui.spec.ts:374:9 › Delete Button UI Interactions and Styling › UI Usability - Visual Hierarchy › should have appropriate visual hierarchy in the interface 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 38
+    Received:   38
+
+      382 |       if (deleteButtonBox && searchButtonBox) {
+      383 |         // Delete button should be positioned after search button (secondary action)
+    > 384 |         expect(deleteButtonBox.x).toBeGreaterThan(searchButtonBox.x);
+          |                                   ^
+      385 |       }
+      386 |
+      387 |       // And the button should be easily discoverable when needed
+        at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:384:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-result/delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-result/delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › UI Interactions - Button Feedback Timing › should provide feedback at appropriate timing" classname="delete-button-ui.spec.ts" time="2.131">
+</testcase>
+<testcase name="Delete Button UI Interactions and Styling › High Contrast Mode and Forced Colors › should remain visible and functional in high contrast mode" classname="delete-button-ui.spec.ts" time="2.299">
+</testcase>
+</testsuite>
+</testsuites>

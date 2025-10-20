@@ -1,5 +1,5 @@
 ---
-name: fullstack-developer
+name: Tasos - UI Fullstack Developer
 description: Use this agent when you need comprehensive software development services including requirements analysis, effort estimation, and full-stack implementation. Examples: <example>Context: User has business requirements that need to be analyzed and developed into a working application. user: 'I need a web application for managing customer orders with user authentication, order tracking, and admin dashboard' assistant: 'I'll use the fullstack-developer agent to analyze these requirements, provide effort estimates, and develop the complete solution' <commentary>The user has provided business requirements that need analysis, estimation, and development - perfect for the fullstack-developer agent.</commentary></example> <example>Context: User wants effort estimation for a development project. user: 'Can you estimate how long it would take to build a REST API with authentication and CRUD operations for a blog platform?' assistant: 'Let me use the fullstack-developer agent to analyze these requirements and provide detailed effort estimates' <commentary>This requires technical analysis and effort estimation expertise from the fullstack-developer agent.</commentary></example>
 model: sonnet
 color: blue

@@ -1,0 +1,3876 @@
+{
+  "config": {
+    "configFile": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/playwright.config.ts",
+    "rootDir": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 600000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "test-result/html-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result/test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-result/test-results.xml"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 2,
+    "webServer": {
+      "command": "npm start",
+      "url": "http://localhost:4200",
+      "reuseExistingServer": true,
+      "timeout": 120000,
+      "cwd": "../"
+    }
+  },
+  "suites": [
+    {
+      "title": "delete-button-ui.spec.ts",
+      "file": "delete-button-ui.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Delete Button UI Interactions and Styling",
+          "file": "delete-button-ui.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "UI Styling - Default Button Appearance",
+              "file": "delete-button-ui.spec.ts",
+              "line": 12,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should have correct default appearance when enabled",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1824,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:27.451Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-414449f3d002519a80d9",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 13,
+                  "column": 9
+                },
+                {
+                  "title": "should have correct default appearance when enabled",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3846,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:43.510Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-86da631a67650d20e513",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 13,
+                  "column": 9
+                },
+                {
+                  "title": "should have correct default appearance when enabled",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 3046,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:17.652Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-993bb3c5b48532cfd9b1",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 13,
+                  "column": 9
+                },
+                {
+                  "title": "should have correct default appearance when enabled",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 13,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2040,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:42.498Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-559dc1d23f3a630b2a76",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 13,
+                  "column": 9
+                },
+                {
+                  "title": "should have correct default appearance when enabled",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3149,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:00.655Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-b5f5f281a312a8cf9947",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 13,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Styling - Hover State Visual Feedback",
+              "file": "delete-button-ui.spec.ts",
+              "line": 40,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should provide proper visual feedback on hover",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 2143,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 26,
+                              "line": 67
+                            },
+                            "snippet": "  65 |       // And the transition should be smooth (contains 'ease')\n  66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 67 |       expect(transition).toContain('ease');\n     |                          ^\n  68 |\n  69 |       // When I move my mouse away from the button\n  70 |       await bookSearchPage.searchInput.hover();"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 26,
+                                "line": 67
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n\n  65 |       // And the transition should be smooth (contains 'ease')\n  66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 67 |       expect(transition).toContain('ease');\n     |                          ^\n  68 |\n  69 |       // When I move my mouse away from the button\n  70 |       await bookSearchPage.searchInput.hover();\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:27.450Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 26,
+                            "line": 67
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-46e38a7e7abf7a2f053e",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 41,
+                  "column": 9
+                },
+                {
+                  "title": "should provide proper visual feedback on hover",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 4204,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 26,
+                              "line": 67
+                            },
+                            "snippet": "  65 |       // And the transition should be smooth (contains 'ease')\n  66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 67 |       expect(transition).toContain('ease');\n     |                          ^\n  68 |\n  69 |       // When I move my mouse away from the button\n  70 |       await bookSearchPage.searchInput.hover();"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 26,
+                                "line": 67
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n\n  65 |       // And the transition should be smooth (contains 'ease')\n  66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 67 |       expect(transition).toContain('ease');\n     |                          ^\n  68 |\n  69 |       // When I move my mouse away from the button\n  70 |       await bookSearchPage.searchInput.hover();\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:43.577Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-firefox/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-firefox/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-firefox/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 26,
+                            "line": 67
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-244121bfa5b455516519",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 41,
+                  "column": 9
+                },
+                {
+                  "title": "should provide proper visual feedback on hover",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 3232,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 26,
+                              "line": 67
+                            },
+                            "snippet": "  65 |       // And the transition should be smooth (contains 'ease')\n  66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 67 |       expect(transition).toContain('ease');\n     |                          ^\n  68 |\n  69 |       // When I move my mouse away from the button\n  70 |       await bookSearchPage.searchInput.hover();"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 26,
+                                "line": 67
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n\n  65 |       // And the transition should be smooth (contains 'ease')\n  66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 67 |       expect(transition).toContain('ease');\n     |                          ^\n  68 |\n  69 |       // When I move my mouse away from the button\n  70 |       await bookSearchPage.searchInput.hover();\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:19.125Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-webkit/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-webkit/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-webkit/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 26,
+                            "line": 67
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-42162f3f2b8eabf00ea3",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 41,
+                  "column": 9
+                },
+                {
+                  "title": "should provide proper visual feedback on hover",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 14,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 2393,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 26,
+                              "line": 67
+                            },
+                            "snippet": "  65 |       // And the transition should be smooth (contains 'ease')\n  66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 67 |       expect(transition).toContain('ease');\n     |                          ^\n  68 |\n  69 |       // When I move my mouse away from the button\n  70 |       await bookSearchPage.searchInput.hover();"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 26,
+                                "line": 67
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n\n  65 |       // And the transition should be smooth (contains 'ease')\n  66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 67 |       expect(transition).toContain('ease');\n     |                          ^\n  68 |\n  69 |       // When I move my mouse away from the button\n  70 |       await bookSearchPage.searchInput.hover();\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:42.627Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Chrome/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Chrome/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Chrome/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 26,
+                            "line": 67
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-3f84294317d73f96fb86",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 41,
+                  "column": 9
+                },
+                {
+                  "title": "should provide proper visual feedback on hover",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 21,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 3808,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 26,
+                              "line": 67
+                            },
+                            "snippet": "  65 |       // And the transition should be smooth (contains 'ease')\n  66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 67 |       expect(transition).toContain('ease');\n     |                          ^\n  68 |\n  69 |       // When I move my mouse away from the button\n  70 |       await bookSearchPage.searchInput.hover();"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 26,
+                                "line": 67
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n\n  65 |       // And the transition should be smooth (contains 'ease')\n  66 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 67 |       expect(transition).toContain('ease');\n     |                          ^\n  68 |\n  69 |       // When I move my mouse away from the button\n  70 |       await bookSearchPage.searchInput.hover();\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:67:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:04.875Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Safari/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Safari/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-72283-er-visual-feedback-on-hover-Mobile-Safari/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 26,
+                            "line": 67
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-03257ba86a4ab7f6ff1e",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 41,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Styling - Disabled State Visual Indicators",
+              "file": "delete-button-ui.spec.ts",
+              "line": 79,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should have correct visual indicators when disabled",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1270,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:29.657Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-fb5fbf04ff25f4e32e0e",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 80,
+                  "column": 9
+                },
+                {
+                  "title": "should have correct visual indicators when disabled",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1761,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:49.028Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-32bbb4b325089ab18535",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 80,
+                  "column": 9
+                },
+                {
+                  "title": "should have correct visual indicators when disabled",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1841,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:21.273Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-40028266141d4c4e9116",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 80,
+                  "column": 9
+                },
+                {
+                  "title": "should have correct visual indicators when disabled",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 13,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1396,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:45.078Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-356fe3ed17a540b961f4",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 80,
+                  "column": 9
+                },
+                {
+                  "title": "should have correct visual indicators when disabled",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2343,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:04.459Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-d1adc8712b56ae9d707b",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 80,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Interactions - Click Feedback and Active State",
+              "file": "delete-button-ui.spec.ts",
+              "line": 106,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should provide appropriate click feedback with active state styling",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1454,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:31.140Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-a9b6f5719f2f1fa2c033",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 107,
+                  "column": 9
+                },
+                {
+                  "title": "should provide appropriate click feedback with active state styling",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1566,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:50.819Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-fb12b701c72d19f801a2",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 107,
+                  "column": 9
+                },
+                {
+                  "title": "should provide appropriate click feedback with active state styling",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 11,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2684,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:24.362Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-b9c7dee6d13f365cbfc7",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 107,
+                  "column": 9
+                },
+                {
+                  "title": "should provide appropriate click feedback with active state styling",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1461,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:46.623Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-2a82c952e6ba5b5a1a08",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 107,
+                  "column": 9
+                },
+                {
+                  "title": "should provide appropriate click feedback with active state styling",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2408,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:06.849Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-64867c102c944c7475f4",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 107,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Interactions - Focus Indicators for Keyboard Users",
+              "file": "delete-button-ui.spec.ts",
+              "line": 125,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should show proper focus indicators for keyboard navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1111,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:30.961Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-ed51d87042355442fbd4",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 126,
+                  "column": 9
+                },
+                {
+                  "title": "should show proper focus indicators for keyboard navigation",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 8786,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.delete-button')\nExpected: not focused\nReceived: focused\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeFocused\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.delete-button')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" class=\"delete-button\" aria-label=\"Delete search\" _ngcontent-ng-c3324351578=\"\"> Delete </button>\u001b[22m\n\u001b[2m      - unexpected value \"focused\"\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.delete-button')\nExpected: not focused\nReceived: focused\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeFocused\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.delete-button')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" class=\"delete-button\" aria-label=\"Delete search\" _ngcontent-ng-c3324351578=\"\"> Delete </button>\u001b[22m\n\u001b[2m      - unexpected value \"focused\"\u001b[22m\n\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:140:53",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 53,
+                              "line": 140
+                            },
+                            "snippet": "  138 |\n  139 |       // Then the focus indicator should be removed\n> 140 |       await expect(bookSearchPage.deleteButton).not.toBeFocused();\n      |                                                     ^\n  141 |     });\n  142 |   });\n  143 |"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 53,
+                                "line": 140
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.delete-button')\nExpected: not focused\nReceived: focused\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeFocused\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.delete-button')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" class=\"delete-button\" aria-label=\"Delete search\" _ngcontent-ng-c3324351578=\"\"> Delete </button>\u001b[22m\n\u001b[2m      - unexpected value \"focused\"\u001b[22m\n\n\n  138 |\n  139 |       // Then the focus indicator should be removed\n> 140 |       await expect(bookSearchPage.deleteButton).not.toBeFocused();\n      |                                                     ^\n  141 |     });\n  142 |   });\n  143 |\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:140:53"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:52.605Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-48e9c-ors-for-keyboard-navigation-firefox/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-48e9c-ors-for-keyboard-navigation-firefox/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-48e9c-ors-for-keyboard-navigation-firefox/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 53,
+                            "line": 140
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-8812d56c914c4784f873",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 126,
+                  "column": 9
+                },
+                {
+                  "title": "should show proper focus indicators for keyboard navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1769,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:23.136Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-6de581944162f98af109",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 126,
+                  "column": 9
+                },
+                {
+                  "title": "should show proper focus indicators for keyboard navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 13,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1147,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:46.508Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-eb3a6d6fba6f9406c356",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 126,
+                  "column": 9
+                },
+                {
+                  "title": "should show proper focus indicators for keyboard navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1739,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:09.394Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-1cf66d768498530c6668",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 126,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Layout - Button Positioning Within Search Container",
+              "file": "delete-button-ui.spec.ts",
+              "line": 144,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should be properly positioned within the search container",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1175,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:32.105Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-bab544f5f96011bb4a0e",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 145,
+                  "column": 9
+                },
+                {
+                  "title": "should be properly positioned within the search container",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1523,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:52.402Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-0e097ba8bc7b24d555f4",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 145,
+                  "column": 9
+                },
+                {
+                  "title": "should be properly positioned within the search container",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2113,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:24.921Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-3cc19fd1c29030a7e1f0",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 145,
+                  "column": 9
+                },
+                {
+                  "title": "should be properly positioned within the search container",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 13,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 1267,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m355\u001b[39m\nReceived:   \u001b[31m38\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m355\u001b[39m\nReceived:   \u001b[31m38\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:155:35",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 35,
+                              "line": 155
+                            },
+                            "snippet": "  153 |       if (deleteButtonBox && searchButtonBox) {\n  154 |         // Then the delete button should be positioned to the right of the search button\n> 155 |         expect(deleteButtonBox.x).toBeGreaterThan(searchButtonBox.x + searchButtonBox.width);\n      |                                   ^\n  156 |\n  157 |         // And there should be consistent gap between search and delete buttons (10px from CSS)\n  158 |         const gap = deleteButtonBox.x - (searchButtonBox.x + searchButtonBox.width);"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 35,
+                                "line": 155
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m355\u001b[39m\nReceived:   \u001b[31m38\u001b[39m\n\n  153 |       if (deleteButtonBox && searchButtonBox) {\n  154 |         // Then the delete button should be positioned to the right of the search button\n> 155 |         expect(deleteButtonBox.x).toBeGreaterThan(searchButtonBox.x + searchButtonBox.width);\n      |                                   ^\n  156 |\n  157 |         // And there should be consistent gap between search and delete buttons (10px from CSS)\n  158 |         const gap = deleteButtonBox.x - (searchButtonBox.x + searchButtonBox.width);\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:155:35"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:47.680Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Chrome/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Chrome/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Chrome/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 35,
+                            "line": 155
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-d96aa309c634394d9c74",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 145,
+                  "column": 9
+                },
+                {
+                  "title": "should be properly positioned within the search container",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 22,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 2631,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m352\u001b[39m\nReceived:   \u001b[31m38\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m352\u001b[39m\nReceived:   \u001b[31m38\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:155:35",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 35,
+                              "line": 155
+                            },
+                            "snippet": "  153 |       if (deleteButtonBox && searchButtonBox) {\n  154 |         // Then the delete button should be positioned to the right of the search button\n> 155 |         expect(deleteButtonBox.x).toBeGreaterThan(searchButtonBox.x + searchButtonBox.width);\n      |                                   ^\n  156 |\n  157 |         // And there should be consistent gap between search and delete buttons (10px from CSS)\n  158 |         const gap = deleteButtonBox.x - (searchButtonBox.x + searchButtonBox.width);"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 35,
+                                "line": 155
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m352\u001b[39m\nReceived:   \u001b[31m38\u001b[39m\n\n  153 |       if (deleteButtonBox && searchButtonBox) {\n  154 |         // Then the delete button should be positioned to the right of the search button\n> 155 |         expect(deleteButtonBox.x).toBeGreaterThan(searchButtonBox.x + searchButtonBox.width);\n      |                                   ^\n  156 |\n  157 |         // And there should be consistent gap between search and delete buttons (10px from CSS)\n  158 |         const gap = deleteButtonBox.x - (searchButtonBox.x + searchButtonBox.width);\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:155:35"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:10.631Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Safari/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Safari/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-8fbbf-within-the-search-container-Mobile-Safari/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 35,
+                            "line": 155
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-9d6396138ef2c71f0a13",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 145,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Layout - Responsive Behavior for Mobile",
+              "file": "delete-button-ui.spec.ts",
+              "line": 171,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should adapt correctly to mobile responsive layout",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2046,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:32.961Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-35854e3e3e52f7af7c8a",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 172,
+                  "column": 9
+                },
+                {
+                  "title": "should adapt correctly to mobile responsive layout",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3408,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:53.944Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-619f8dde890ec321e32c",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 172,
+                  "column": 9
+                },
+                {
+                  "title": "should adapt correctly to mobile responsive layout",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2839,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:27.052Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-581adae322e66cd4ae8a",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 172,
+                  "column": 9
+                },
+                {
+                  "title": "should adapt correctly to mobile responsive layout",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1975,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:48.438Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-38778a8da04f6843b5be",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 172,
+                  "column": 9
+                },
+                {
+                  "title": "should adapt correctly to mobile responsive layout",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2592,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:11.154Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-6281abc3d06e418a4958",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 172,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Accessibility - Color Contrast Requirements",
+              "file": "delete-button-ui.spec.ts",
+              "line": 197,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should meet accessibility color contrast requirements",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1628,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:33.299Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-47ef1292f72a62171eb4",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 198,
+                  "column": 9
+                },
+                {
+                  "title": "should meet accessibility color contrast requirements",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2109,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:57.377Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-f5f0862fda005efcc39b",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 198,
+                  "column": 9
+                },
+                {
+                  "title": "should meet accessibility color contrast requirements",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 11,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2439,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:27.581Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-8e04a1399bb853ab3352",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 198,
+                  "column": 9
+                },
+                {
+                  "title": "should meet accessibility color contrast requirements",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 16,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2008,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:50.264Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-5fd63a60f1cd6341ebae",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 198,
+                  "column": 9
+                },
+                {
+                  "title": "should meet accessibility color contrast requirements",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2209,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:13.766Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-3e8cdee951dcfd4e74fb",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 198,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Accessibility - Size Requirements",
+              "file": "delete-button-ui.spec.ts",
+              "line": 226,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should meet minimum size requirements for accessibility",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1217,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:34.952Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-4de1c523ce1224e40aaa",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 227,
+                  "column": 9
+                },
+                {
+                  "title": "should meet minimum size requirements for accessibility",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1402,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:59.509Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-b4fcae1faee7a114c2c4",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 227,
+                  "column": 9
+                },
+                {
+                  "title": "should meet minimum size requirements for accessibility",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1901,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:29.908Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-d3f4ae674aaad0d3a324",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 227,
+                  "column": 9
+                },
+                {
+                  "title": "should meet minimum size requirements for accessibility",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1470,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:50.432Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-c215ad4b6ca5fde60bea",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 227,
+                  "column": 9
+                },
+                {
+                  "title": "should meet minimum size requirements for accessibility",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 23,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2286,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:15.303Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-039298b9d688e073587e",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 227,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Animations - Transition Smoothness and Motion Preferences",
+              "file": "delete-button-ui.spec.ts",
+              "line": 246,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should have smooth animations that are not disorienting",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 1354,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 26,
+                              "line": 257
+                            },
+                            "snippet": "  255 |       // Then all transitions should use \"ease\" timing function\n  256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 257 |       expect(transition).toContain('ease');\n      |                          ^\n  258 |\n  259 |       // And transition should be defined\n  260 |       expect(transition).not.toBe('all 0s ease 0s');"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 26,
+                                "line": 257
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n\n  255 |       // Then all transitions should use \"ease\" timing function\n  256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 257 |       expect(transition).toContain('ease');\n      |                          ^\n  258 |\n  259 |       // And transition should be defined\n  260 |       expect(transition).not.toBe('all 0s ease 0s');\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:35.026Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 26,
+                            "line": 257
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-7e251fb3507939df2a4d",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 247,
+                  "column": 9
+                },
+                {
+                  "title": "should have smooth animations that are not disorienting",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 1543,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 26,
+                              "line": 257
+                            },
+                            "snippet": "  255 |       // Then all transitions should use \"ease\" timing function\n  256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 257 |       expect(transition).toContain('ease');\n      |                          ^\n  258 |\n  259 |       // And transition should be defined\n  260 |       expect(transition).not.toBe('all 0s ease 0s');"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 26,
+                                "line": 257
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n\n  255 |       // Then all transitions should use \"ease\" timing function\n  256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 257 |       expect(transition).toContain('ease');\n      |                          ^\n  258 |\n  259 |       // And transition should be defined\n  260 |       expect(transition).not.toBe('all 0s ease 0s');\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:00.926Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-firefox/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-firefox/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-firefox/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 26,
+                            "line": 257
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-3522f8f03d2692594ff4",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 247,
+                  "column": 9
+                },
+                {
+                  "title": "should have smooth animations that are not disorienting",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 11,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 2113,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 26,
+                              "line": 257
+                            },
+                            "snippet": "  255 |       // Then all transitions should use \"ease\" timing function\n  256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 257 |       expect(transition).toContain('ease');\n      |                          ^\n  258 |\n  259 |       // And transition should be defined\n  260 |       expect(transition).not.toBe('all 0s ease 0s');"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 26,
+                                "line": 257
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n\n  255 |       // Then all transitions should use \"ease\" timing function\n  256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 257 |       expect(transition).toContain('ease');\n      |                          ^\n  258 |\n  259 |       // And transition should be defined\n  260 |       expect(transition).not.toBe('all 0s ease 0s');\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:30.040Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-webkit/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-webkit/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-webkit/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 26,
+                            "line": 257
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-9f8a24a2ff86f29f64c2",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 247,
+                  "column": 9
+                },
+                {
+                  "title": "should have smooth animations that are not disorienting",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 1334,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 26,
+                              "line": 257
+                            },
+                            "snippet": "  255 |       // Then all transitions should use \"ease\" timing function\n  256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 257 |       expect(transition).toContain('ease');\n      |                          ^\n  258 |\n  259 |       // And transition should be defined\n  260 |       expect(transition).not.toBe('all 0s ease 0s');"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 26,
+                                "line": 257
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n\n  255 |       // Then all transitions should use \"ease\" timing function\n  256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 257 |       expect(transition).toContain('ease');\n      |                          ^\n  258 |\n  259 |       // And transition should be defined\n  260 |       expect(transition).not.toBe('all 0s ease 0s');\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:51.926Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Chrome/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Chrome/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Chrome/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 26,
+                            "line": 257
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-881f98e90bbf1c651b41",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 247,
+                  "column": 9
+                },
+                {
+                  "title": "should have smooth animations that are not disorienting",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 2160,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 26,
+                              "line": 257
+                            },
+                            "snippet": "  255 |       // Then all transitions should use \"ease\" timing function\n  256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 257 |       expect(transition).toContain('ease');\n      |                          ^\n  258 |\n  259 |       // And transition should be defined\n  260 |       expect(transition).not.toBe('all 0s ease 0s');"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 26,
+                                "line": 257
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"ease\"\u001b[39m\nReceived string:    \u001b[31m\"0.3s\"\u001b[39m\n\n  255 |       // Then all transitions should use \"ease\" timing function\n  256 |       const transition = await bookSearchPage.getDeleteButtonComputedStyle('transition');\n> 257 |       expect(transition).toContain('ease');\n      |                          ^\n  258 |\n  259 |       // And transition should be defined\n  260 |       expect(transition).not.toBe('all 0s ease 0s');\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:257:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:15.996Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Safari/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Safari/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-0c600-s-that-are-not-disorienting-Mobile-Safari/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 26,
+                            "line": 257
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-dc4e7afe85f188bd3973",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 247,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI States - Button State Consistency",
+              "file": "delete-button-ui.spec.ts",
+              "line": 274,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should be visually consistent with search button",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1138,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:36.208Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-683ef206c540c69fa16a",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 275,
+                  "column": 9
+                },
+                {
+                  "title": "should be visually consistent with search button",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4135,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:04.566Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-eaeb4ba8b758f62c8978",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 275,
+                  "column": 9
+                },
+                {
+                  "title": "should be visually consistent with search button",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1929,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:31.834Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-cd80374582359986477e",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 275,
+                  "column": 9
+                },
+                {
+                  "title": "should be visually consistent with search button",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 16,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 1191,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m3\u001b[39m\nReceived:   \u001b[31m4\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m3\u001b[39m\nReceived:   \u001b[31m4\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:285:75",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 75,
+                              "line": 285
+                            },
+                            "snippet": "  283 |       if (deleteButtonBox && searchButtonBox) {\n  284 |         // Then both buttons should have the same height\n> 285 |         expect(Math.abs(deleteButtonBox.height - searchButtonBox.height)).toBeLessThan(3);\n      |                                                                           ^\n  286 |       }\n  287 |\n  288 |       // And both buttons should have the same font size"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 75,
+                                "line": 285
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m3\u001b[39m\nReceived:   \u001b[31m4\u001b[39m\n\n  283 |       if (deleteButtonBox && searchButtonBox) {\n  284 |         // Then both buttons should have the same height\n> 285 |         expect(Math.abs(deleteButtonBox.height - searchButtonBox.height)).toBeLessThan(3);\n      |                                                                           ^\n  286 |       }\n  287 |\n  288 |       // And both buttons should have the same font size\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:285:75"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:52.573Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Chrome/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Chrome/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Chrome/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 75,
+                            "line": 285
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-1a4dd459a5ae0092d24c",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 275,
+                  "column": 9
+                },
+                {
+                  "title": "should be visually consistent with search button",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 23,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 1718,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m3\u001b[39m\nReceived:   \u001b[31m4\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m3\u001b[39m\nReceived:   \u001b[31m4\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:285:75",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 75,
+                              "line": 285
+                            },
+                            "snippet": "  283 |       if (deleteButtonBox && searchButtonBox) {\n  284 |         // Then both buttons should have the same height\n> 285 |         expect(Math.abs(deleteButtonBox.height - searchButtonBox.height)).toBeLessThan(3);\n      |                                                                           ^\n  286 |       }\n  287 |\n  288 |       // And both buttons should have the same font size"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 75,
+                                "line": 285
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m3\u001b[39m\nReceived:   \u001b[31m4\u001b[39m\n\n  283 |       if (deleteButtonBox && searchButtonBox) {\n  284 |         // Then both buttons should have the same height\n> 285 |         expect(Math.abs(deleteButtonBox.height - searchButtonBox.height)).toBeLessThan(3);\n      |                                                                           ^\n  286 |       }\n  287 |\n  288 |       // And both buttons should have the same font size\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:285:75"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:18.091Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Safari/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Safari/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-f22cd-nsistent-with-search-button-Mobile-Safari/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 75,
+                            "line": 285
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-084a56df6e82a4b0170a",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 275,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Feedback - Loading State Behavior",
+              "file": "delete-button-ui.spec.ts",
+              "line": 304,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should provide immediate visual feedback during loading states",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1384,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:37.687Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-769ff3ae1e619fb18a30",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 305,
+                  "column": 9
+                },
+                {
+                  "title": "should provide immediate visual feedback during loading states",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 4320,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:05.257Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-d4da9238acd2e8b7d282",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 305,
+                  "column": 9
+                },
+                {
+                  "title": "should provide immediate visual feedback during loading states",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 12,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2903,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:33.522Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-897e9e81ba5a3a40483d",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 305,
+                  "column": 9
+                },
+                {
+                  "title": "should provide immediate visual feedback during loading states",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 17,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1569,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:54.418Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-d5c46e70bfc1a5d968d5",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 305,
+                  "column": 9
+                },
+                {
+                  "title": "should provide immediate visual feedback during loading states",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 24,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2589,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:19.775Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-90af1b60a140db913aa5",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 305,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Errors - Error State Visual Handling",
+              "file": "delete-button-ui.spec.ts",
+              "line": 324,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should maintain normal appearance during error states",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2403,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:37.367Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-fc0d741fc48be06fe956",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 325,
+                  "column": 9
+                },
+                {
+                  "title": "should maintain normal appearance during error states",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2992,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:10.394Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-9ee46b25d3db1f84dee7",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 325,
+                  "column": 9
+                },
+                {
+                  "title": "should maintain normal appearance during error states",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 3188,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:33.779Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-2a3026bb3236aa7c70f8",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 325,
+                  "column": 9
+                },
+                {
+                  "title": "should maintain normal appearance during error states",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 18,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2776,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:55.041Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-c0ba65e279dc521e8193",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 325,
+                  "column": 9
+                },
+                {
+                  "title": "should maintain normal appearance during error states",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 25,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 4092,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:21.294Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-26c18d30fd95d26b85b5",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 325,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Customization - Theme Compatibility",
+              "file": "delete-button-ui.spec.ts",
+              "line": 352,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should work seamlessly with application theme",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1599,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:39.345Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-914398e9de3236222928",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 353,
+                  "column": 9
+                },
+                {
+                  "title": "should work seamlessly with application theme",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2071,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:11.817Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-93a1bc2b4106c76bc5a8",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 353,
+                  "column": 9
+                },
+                {
+                  "title": "should work seamlessly with application theme",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2521,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:36.988Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-719dfa91031359416330",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 353,
+                  "column": 9
+                },
+                {
+                  "title": "should work seamlessly with application theme",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 17,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1720,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:56.298Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-1475e076a1bd4957295e",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 353,
+                  "column": 9
+                },
+                {
+                  "title": "should work seamlessly with application theme",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 24,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2377,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:23.003Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-fb898d76ddc0358e3ca1",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 353,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Usability - Visual Hierarchy",
+              "file": "delete-button-ui.spec.ts",
+              "line": 373,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should have appropriate visual hierarchy in the interface",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1153,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:39.789Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-36bbb39164b881cdfd9b",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 374,
+                  "column": 9
+                },
+                {
+                  "title": "should have appropriate visual hierarchy in the interface",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1579,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:13.413Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-c8c71164387610dfad02",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 374,
+                  "column": 9
+                },
+                {
+                  "title": "should have appropriate visual hierarchy in the interface",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 12,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2124,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:37.029Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-78620d1c2bb91ad697bf",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 374,
+                  "column": 9
+                },
+                {
+                  "title": "should have appropriate visual hierarchy in the interface",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 17,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 1306,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m38\u001b[39m\nReceived:   \u001b[31m38\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m38\u001b[39m\nReceived:   \u001b[31m38\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:384:35",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 35,
+                              "line": 384
+                            },
+                            "snippet": "  382 |       if (deleteButtonBox && searchButtonBox) {\n  383 |         // Delete button should be positioned after search button (secondary action)\n> 384 |         expect(deleteButtonBox.x).toBeGreaterThan(searchButtonBox.x);\n      |                                   ^\n  385 |       }\n  386 |\n  387 |       // And the button should be easily discoverable when needed"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 35,
+                                "line": 384
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m38\u001b[39m\nReceived:   \u001b[31m38\u001b[39m\n\n  382 |       if (deleteButtonBox && searchButtonBox) {\n  383 |         // Delete button should be positioned after search button (secondary action)\n> 384 |         expect(deleteButtonBox.x).toBeGreaterThan(searchButtonBox.x);\n      |                                   ^\n  385 |       }\n  386 |\n  387 |       // And the button should be easily discoverable when needed\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:384:35"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:58.035Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Chrome/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Chrome/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Chrome/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 35,
+                            "line": 384
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-d7e68a388b2ae26c0e8b",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 374,
+                  "column": 9
+                },
+                {
+                  "title": "should have appropriate visual hierarchy in the interface",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 24,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 2393,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m38\u001b[39m\nReceived:   \u001b[31m38\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m38\u001b[39m\nReceived:   \u001b[31m38\u001b[39m\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:384:35",
+                            "location": {
+                              "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                              "column": 35,
+                              "line": 384
+                            },
+                            "snippet": "  382 |       if (deleteButtonBox && searchButtonBox) {\n  383 |         // Delete button should be positioned after search button (secondary action)\n> 384 |         expect(deleteButtonBox.x).toBeGreaterThan(searchButtonBox.x);\n      |                                   ^\n  385 |       }\n  386 |\n  387 |       // And the button should be easily discoverable when needed"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                                "column": 35,
+                                "line": 384
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m38\u001b[39m\nReceived:   \u001b[31m38\u001b[39m\n\n  382 |       if (deleteButtonBox && searchButtonBox) {\n  383 |         // Delete button should be positioned after search button (secondary action)\n> 384 |         expect(deleteButtonBox.x).toBeGreaterThan(searchButtonBox.x);\n      |                                   ^\n  385 |       }\n  386 |\n  387 |       // And the button should be easily discoverable when needed\n    at /Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts:384:35"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:25.540Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Safari/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Safari/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/test-result/delete-button-ui-Delete-Bu-ee7eb--hierarchy-in-the-interface-Mobile-Safari/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/konstantinosloupos/Projects/Meetup/book-search-app/playwright/tests/delete-button-ui.spec.ts",
+                            "column": 35,
+                            "line": 384
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-1933e1259a9b86a8afa0",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 374,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "UI Interactions - Button Feedback Timing",
+              "file": "delete-button-ui.spec.ts",
+              "line": 396,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should provide feedback at appropriate timing",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1324,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:40.957Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-102d3077416cede650fb",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 397,
+                  "column": 9
+                },
+                {
+                  "title": "should provide feedback at appropriate timing",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1615,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:13.910Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-001ec9fd5fc6ac72404b",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 397,
+                  "column": 9
+                },
+                {
+                  "title": "should provide feedback at appropriate timing",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 12,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1971,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:39.176Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-676ef569415f9d4afd3f",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 397,
+                  "column": 9
+                },
+                {
+                  "title": "should provide feedback at appropriate timing",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 18,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1391,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:58.163Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-be648a06905e1ddb00ad",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 397,
+                  "column": 9
+                },
+                {
+                  "title": "should provide feedback at appropriate timing",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 25,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2131,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:26.221Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-ce351f2a9d70bc575d7e",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 397,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "High Contrast Mode and Forced Colors",
+              "file": "delete-button-ui.spec.ts",
+              "line": 422,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should remain visible and functional in high contrast mode",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1412,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:02:40.969Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-bfb82147c2194764ecd0",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 423,
+                  "column": 9
+                },
+                {
+                  "title": "should remain visible and functional in high contrast mode",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1983,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:15.009Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-e4748ce968c21ffff504",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 423,
+                  "column": 9
+                },
+                {
+                  "title": "should remain visible and functional in high contrast mode",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1850,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:03:39.527Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-920e99d63426e5bdd6ac",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 423,
+                  "column": 9
+                },
+                {
+                  "title": "should remain visible and functional in high contrast mode",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 19,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1709,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:00.503Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-0261f2e2197ad85b9bcd",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 423,
+                  "column": 9
+                },
+                {
+                  "title": "should remain visible and functional in high contrast mode",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 26,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2299,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-20T23:04:29.259Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1f8cc75f002e2bf40bdd-15ae49dff2a88089e716",
+                  "file": "delete-button-ui.spec.ts",
+                  "line": 423,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-10-20T23:02:26.064Z",
+    "duration": 126028.085,
+    "expected": 68,
+    "skipped": 0,
+    "unexpected": 17,
+    "flaky": 0
+  }
+}
