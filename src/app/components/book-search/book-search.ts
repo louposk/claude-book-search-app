@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class BookSearchComponent {
   @Output() search = new EventEmitter<{query: string, searchType: string}>();
-  @Output() delete = new EventEmitter<void>();
+  @Output() clear = new EventEmitter<void>();
 
   searchQuery: string = '';
   searchType: string = 'general';
@@ -38,9 +38,9 @@ export class BookSearchComponent {
     }
   }
 
-  onDelete() {
+  onClear() {
     this.searchQuery = '';
     this.searchType = 'general';
-    this.delete.emit();
+    this.clear.emit();
   }
 }

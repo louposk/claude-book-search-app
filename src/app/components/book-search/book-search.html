@@ -27,12 +27,12 @@
         Search
       </button>
       <button
-        (click)="onDelete(); searchInput.focus()"
+        (click)="onClear(); searchInput.focus()"
         [disabled]="!searchQuery.trim()"
-        class="delete-button"
+        class="clear-button"
         type="button"
-        aria-label="Delete search">
-        Delete
+        aria-label="Clear search">
+        Clear
       </button>
     </div>
   </div>

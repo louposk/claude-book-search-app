@@ -5,7 +5,7 @@
   </header>
 
   <main class="app-main">
-    <app-book-search (search)="onSearch($event)" (delete)="onDelete()"></app-book-search>
+    <app-book-search (search)="onSearch($event)" (clear)="onClear()"></app-book-search>
     <app-book-list 
       [books]="books" 
       [loading]="loading" 

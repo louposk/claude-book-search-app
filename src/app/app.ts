@@ -58,7 +58,7 @@ export class AppComponent {
     });
   }
 
-  onDelete() {
+  onClear() {
     this.books = [];
     this.loading = false;
     this.searchPerformed = false;

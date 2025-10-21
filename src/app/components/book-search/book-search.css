@@ -85,7 +85,7 @@
   cursor: not-allowed;
 }
 
-.delete-button {
+.clear-button {
   padding: 12px 24px;
   background: transparent;
   color: #007bff;
@@ -97,13 +97,13 @@
   transition: all 0.3s ease;
 }
 
-.delete-button:hover:not(:disabled) {
+.clear-button:hover:not(:disabled) {
   background: #007bff;
   color: white;
   transform: translateY(-1px);
 }
 
-.delete-button:disabled {
+.clear-button:disabled {
   color: #ccc;
   border-color: #ccc;
   cursor: not-allowed;
